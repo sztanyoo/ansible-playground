@@ -3,5 +3,6 @@
 ```
 ansible-playbook -i inventory testplay.yaml --ask-vault-pass  -v
 ```
-Mondd `jobarat` s lépj be.
+Say `jobarat` and enter.
 
+Further reading: https://docs.ansible.com/ansible/latest/user_guide/vault.html#creating-encrypted-files
