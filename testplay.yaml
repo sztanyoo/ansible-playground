@@ -1,0 +1,15 @@
+---
+- name: Use secret params
+  hosts: localhost
+  gather_facts: no
+  tasks:
+          - name: Read vault
+            include_vars:
+                file: secretparams.yml
+                name: t1
+
+          - debug:
+              msg: "{{ t1 }}"
+
+          - name: Use vault
+            shell: "echo {{ t1.param1 }}"
